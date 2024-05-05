@@ -1,0 +1,15 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.button-class {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	background-color: #fefdff;
+}

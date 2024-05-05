@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    /* Media query styles for max width 768px */
+    .header__menu {
+        gap: 80px;
+    }
+
+    .header__navigation-list {
+        flex-direction: column;
+    }
+
+    .header__navigation-list::after,
+    .header__navigation-list::before {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .hero__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .try-free__button {
+        font-size: 18px;
+        padding: 12px 70px;
+    }
+
+    /* Additional media query styles */
+}
+
+@media (max-width: 1024px) {
+    /* Media query styles for max width 1024px */
+    .hero__title {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
+
+    .try-free__button {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+
+    /* Additional media query styles */
+}

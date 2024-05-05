@@ -1,99 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Hearify — AI quiz generation</title>
-</head>
-<body>
-  <header>
-    <a href="#"><img src="img/logo.svg" alt="Hearify logo"></a>
-    <nav>
-      <ul>
-        <li><a href="#how-it-works-section">How it works</a></li>
-        <li><a href="#faq-section">FAQ</a></li>
-      </ul>
-    </nav>
-      <a href="#">Log in</a>
-      <a href="#">Sign up</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online AI quiz generation from PDF, YouTube videos or presentations.">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Hearify — AI quiz generation</title>
+  </head>
 
-  <section>
-    <h1>Generate custom quiz for your students</h1>
-    <p>Automatically create questions for assignments, tests, and exams from your PDF-files and YouTube videos.</p>
-    <a href="#" class="button">try for free</a>
-    <img src="img/mockup.png" alt="Start screen">
-  </section>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a class="header__logo-link" href="#">
+          <img
+            class="header__logo-img"
+            src="./images/logo.svg"
+            alt="Hearify logo"
+          />
+        </a>
+        <div class="header__menu">
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#how-it-works-section">
+                  How it works
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link"> Blog </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#faq-section"> FAQ </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <a class="header__login-button">Log in</a>
+            <a class="header__sign-up-button">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero__left">
+          <h1 class="hero__title">Generate custom quiz for your students</h1>
+          <p class="hero__description">
+            Automatically create questions for assignments, tests, and exams
+            from your PDF-files and YouTube videos.
+          </p>
+          <a class="try-free__button hero__button">start for free</a>
+        </div>
 
-  <section id="how-it-works-section">
-    <h3>1. Upload a File</h3>
-    <p>It could be any book, presentation, document, or YouTube video link.</p>
-    <img src="img/pdf_window.svg" alt="PDF">
-
-    <h3>2. Customize</h3>
-    <p>Choose difficulty, number of questions, and your preferences.</p>
-    <img src="img/customize.svg" alt="Customize">
-
-
-    <h3>3. Generate</h3>
-    <p>Click the button, wait a few minutes, and your quiz is ready! You can edit it if needed.</p>
-    <img src="img/generate.svg" alt="Generate">
-
-
-    <h3>4. Share & Play</h3>
-    <p>Copy code to start your engaging quiz session.</p>
-    <img src="img/share-play.svg" alt="Share">
-
-
-
-    <h3>5. See Performance</h3>
-    <p>The system automatically grades and creates a rating among all participants.</p>
-    <img src="img/performance.svg" alt="Performance">
-  </section>
-  
-
-  <section>
-    <h2>FAQ</h2>
-      <b>Is it free to use?</b>
-      <p>
-        Yes, you can generate up to 3 single choice quizzes per week.
-      </p>
-
-      <b>What kinds of materials can I download?</b>
-
-      <p>
-        It could be any book, presentation or document. The file must be
-        in PDF format and weigh less than 10 MB. You can also insert
-        YouTube video link.
-      </p>
-
-      <b>What types of questions can I generate?</b>
-      <p>
-        You can create multiple choice and single choice questions, fill
-        in, matching and open questions.
-      </p>
-
-      <b>What is the quality of the quizzes?</b>
-      <p>
-        The quality of the test depends on the quality of the material
-        you have uploaded. It's essential to understand that, similar to
-        humans, AI can make errors, and there's no guarantee of 100%
-        accuracy. We provide all the tools needed to modify or delete
-        questions in a created quiz before sharing it with others.
-      </p>
-  </section>
-
-  <section>
-      <h2>Create your custom quiz in just 1 minute!</h2>
-      <a href="#">Try for free!</a>
-  </section>
-
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#how-it-works-section">How Hearify works</a></li>
-        <li><a href="#faq-section">FAQ</a></li>
-      </ul>
-    </nav>
-    <img src="img/logo.svg" alt="Hearify logo">
-  </footer>
-</body>
+        <div class="hero__right">
+          <img
+            class="hero__quiz-window-image"
+            src="./images/quiz_window.svg"
+            alt="quiz window"
+          />
+          <img
+            class="hero__quiz-image"
+            src="./images/quiz_matching_questions_no_answer_student.svg"
+            alt="matching guestions"/>
+        </div>
+      </section>
+      <section class="how-it-works" id="how-it-works-section">
+        <h2 class="how-it-works__title">How Hearify works</h2>
+        <div class="dashboard">
+          <div class="how-it-works__row">
+            <div class="how-it-works__item">
+              <h3 class="how-it-works__item-title">1. Upload a file</h3>
+              <p class="how-it-works__description">
+                It could be any book, presentation, document or YouTube video
+                link
+              </p>
+              <img
+                class="how-it-works__image"
+                src="./images/pdf_window.svg"
+                alt="pdf window"
+              />
+              <img
+                class="how-it-works__image how-it-works__image--second"
+                src="./images/upload-video.svg"
+                alt="upload video"
+              />
+            </div>
+            <div class="how-it-works__item">
+              <h3 class="how-it-works__item-title">2. Customize</h3>
+              <p class="how-it-works__description">
+                Choose difficulty, number of questions and your preferences
+              </p>
+              <img
+                class="how-it-works__image"
+                src="./images/customize.svg"
+                alt="customize image"
+              />
+            </div>
+          </div>
+          <div class="how-it-works__row">
+            <div class="how-it-works__item">
+              <h3 class="how-it-works__item-title">3. Generate</h3>
+              <p class="how-it-works__description">
+                Click the button, wait a few minutes and your quiz is ready! You
+                can edit it if needed
+              </p>
+              <img
+                class="how-it-works__image"
+                src="./images/questions.svg"
+                alt="generate window"
+              />
+            </div>
+            <div class="how-it-works__item how-it-works__item--second">
+              <h3 class="how-it-works__item-title">4. Share & Play</h3>
+              <p class="how-it-works__description">
+                Copy code to start your engaging quiz session
+              </p>
+              <img
+                class="how-it-works__image"
+                src="./images/share-play.svg"
+                alt="customize image"
+              />
+            </div>
+            <div class="how-it-works__item how-it-works__item--third">
+              <h3 class="how-it-works__item-title">5. See perfomance</h3>
+              <p class="how-it-works__description">
+                The system automatically grades and creates a rating among all
+                participants
+              </p>
+              <img
+                class="how-it-works__image"
+                src="./images/performance.svg"
+                alt="customize image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq-section">
+        <h2 class="faq__title">FAQ</h2>
+        <div class="faq__questions-block">
+            <div class="faq__question">
+              Is it free to use? 
+            </div>
+            <div class="faq__answer">
+              <p>
+                Yes, during beta testing you can generate up to 30 quizzes per month.
+              </p>
+            </div>
+          
+            <div class="faq__question">
+              What kinds of materials can I upload?
+            </div>
+            <div class="faq__answer">
+              <p>
+                It could be any book, presentation, lecture or document. The file must be
+                in PDF format and weigh less than 10 MB. You can also insert
+                YouTube video link.
+              </p>
+            </div>
+            <div class="faq__question">
+              What types of questions can I generate?
+            </div>
+            <div class="faq__answer">
+              <p>
+                You can create multiple choice and single choice questions, fill
+                in, matching and open questions.
+              </p>
+            </div>
+            <div class="faq__question">
+              What is the quality of the quizzes?
+            </div>
+            <div class="faq__answer">
+              <p>
+                The quality of the test depends on the quality of the material
+                you have uploaded. It's essential to understand that, similar to
+                humans, AI can make errors, and there's no guarantee of 100%
+                accuracy. We provide all the tools needed to modify or delete
+                questions in a created quiz before sharing it with others.
+              </p>
+            </div>
+        </div>
+      </section>
+      <section class="create-quiz">
+        <div>
+          <p class="create-quiz__text">
+            Create your <span class="create-quiz__color-text">custom</span> quiz
+            in just <span class="create-quiz__color-text">1 minute !</span>
+          </p>
+          <a class="try-free__button">
+            start for free
+          </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+          <nav class="footer__navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#how-it-works-section" class="footer__navigation-link"
+                  >How Hearify works</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#faq-section" class="footer__navigation-link">FAQ</a>
+              </li>
+              <li class="navigation__item">
+                <a class="footer__navigation-link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <img class="footer__logo" src="./images/logo.svg" alt="logo" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
